@@ -128,7 +128,7 @@ resource "aws_route_table" "tf_private_rt_1a" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    nat_gateway_id = aws_nat_gateway.tf_natgateway_1a.id
+    gateway_id = aws_nat_gateway.tf_natgateway_1a.id
   }
 
   tags = {
@@ -141,7 +141,7 @@ resource "aws_route_table" "tf_private_rt_1b" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    nat_gateway_id = aws_nat_gateway.tf_natgateway_1b.id
+    gateway_id = aws_nat_gateway.tf_natgateway_1b.id
   }
 
   tags = {
